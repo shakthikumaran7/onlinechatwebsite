@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>chatting application</title>
+  </head>
+  <body>
+    <div class="container">
+      <span class="bub a "></span>
+      <span class="bub b "></span>
+      <span class="bub c "></span>
+      <span class="bub d"></span>
+      <span class="bub e"></span>
+      <span class="bub f"></span>
+      <span class="bub g"></span>
+      <span class="bub h"></span>
+      <span class="bub i"></span>
+      <span class="bub j "></span>
+      <span class="bub k"></span>
+  </div>
+    <header>
+      <div class="header_left">
+        <img src="https://reidday.files.wordpress.com/2015/07/albert-einstein-facts-300x300.jpg" alt="profile">
+        <div class="name">
+            <h4 class="firstname">Dev</h4>
+            <small> Online <span class="message_time"></span></small>
+        </div>    
+        <div class="icons_left">
+        <i class="fas fa-bell fa-shake"></i>
+        <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </div>
+      <div class="header_right">
+        <img src="http://www.professionalcounselingschool.it/wp-content/uploads/2019/04/Socrate-300x300.jpg" alt="openchat">
+        <div class="name">
+          <h4 class="firstname">Kiruba karan</h4>
+          <small>Last seen today at <span class="message_time">18:30</span></small>
+        </div>
+        <div class="icons_right">
+        <i class="fas fa-layer-group"></i>
+        <i class="fas fa-phone"></i>
+        <i class="fas fa-home"></i>
+        </div>
+        </div>
+        </div>
+      
+    </header>
+
+    <section>
+      <div class="container_left">
+        <div class="search_bar">
+          <i class="fas fa-search"></i>
+          <input class="searchme" type="text" placeholder="Search or start new chat">
+        </div>
+        <div class="chat_list">
+          <div class="contact active" data-chat="0">
+            <img src="http://www.professionalcounselingschool.it/wp-content/uploads/2019/04/Socrate-300x300.jpg" alt="openchat">
+            <div class="name">
+              <h4 class="firstname">Kiruba karan</h4><small class="message_time">06:35</small><br>
+              <small class="sentence">Sir your account has been hacked...</small>
+            </div>
+          </div>
+          <div class="contact" data-chat="1">
+            <img src="https://optimizehq.imgix.net/authors/headshots/marcus-aurelius.jpg" alt="">
+            <div class="name">
+              <h4 class="firstname">Karthick raj</h4><small class="message_time">11:45</small>
+              <small class="sentence">Hello my dear friend that was good day</small>
+            </div>
+          </div>
+          <div class="contact" data-chat="2">
+            <img src="https://tvaraj.files.wordpress.com/2016/02/epicurys-ancient-greek-philosopher.jpg?w=474" alt="">
+            <div class="name">
+              <h4 class="firstname">Hari</h4><small class="message_time">Yesterday</small>
+              <small class="sentence">Hi dev. The DEMO you requested is scheduled today for 2PM. </small>
+            </div>
+          </div>
+          <div class="contact" data-chat="3">
+            <img src="https://optimizehq.imgix.net/authors/headshots/marcus-aurelius.jpg" alt="">
+            <div class="name">
+              <h4 class="firstname">Sanjay</h4><small class="message_time">Friday</small>
+              <small class="sentence">Hi dev. The DEMO you requested is scheduled today for 2PM. </small>
+            </div>
+          </div>
+          <div class="contact" data-chat="4">
+            <img src="http://www.professionalcounselingschool.it/wp-content/uploads/2019/04/Socrate-300x300.jpg" alt="">
+            <div class="name">
+            <h4 class="firstname">Shakthi kumaran</h4><small class="message_time">Thursday</small>
+              <small class="sentence">Hi dev. The DEMO you requested is scheduled today for 2PM.</small>
+            </div>
+          </div>
+          <div class="contact" data-chat="5">
+            <img src="https://i.warosu.org/data/lit/img/0097/91/1500752210249.jpg" alt="">
+            <div class="name">
+            <h4 class="firstname">Sree hari</h4><small class="message_time">Wednesday</small>
+              <small class="sentence">Hi dev. The DEMO you requested is scheduled today for 2PM.</small>
+            </div>
+          </div>
+          <div class="contact" data-chat="6">
+            <img src="https://nettv4u.com/imagine/06-12-2019/legend-saravanan.jpg" alt="">
+            <div class="name">
+            <h4 class="firstname">Haresh </h4><small class="message_time">Monday</small>
+              <small class="sentence">2marks important question send pannu da please!</small>
+            </div>
+          </div>
+          <div class="contact" data-chat="7">
+            <img src="https://i.warosu.org/data/lit/img/0097/91/1500752210249.jpg" alt="">
+            <div class="name">
+              <h4 class="firstname">hasan sultan</h4><small class="message_time">Monday</small>
+              <small class="sentence">good night, next day meet pannalam</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container_right">
+        <div class="message_container">
+          <div class="message_box active" data-chat="0">
+            <div class="message white">
+              <p>Sir your account has been hacked...</p>
+              <h6>05:15</h6><i class="fas fa-chevron-down"></i>
+              <div class="message_dropdown">
+                <div class="message_options">
+                  <a href="#"class="message_info">Info</a>
+                  <a href="#"class="message_delete">Delete</a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+          <div class="container_right">
+            <div class="dropdown-menu">
+              <button class="dropdown-toggle">Bio</button>
+    
+              <ul class="dropdown-list">
+                  <li class="dropdown-list__item" style="--delay:0.2s">About</li>
+                  <li class="dropdown-list__item" style="--delay:0.4s">Phone</li>
+                  <li class="dropdown-list__item" style="--delay:0.6s">About</li>
+                  <li class="dropdown-list__item" style="--delay:0.8s">Exit</li>
+              </ul>
+            </div> 
+          </div>
+
+            <div class="message green">
+              <p>Okay leave it and thanks for that... </p>
+              <h6>05:30</h6><i class="fas fa-chevron-down"></i>
+              <div class="message_dropdown">
+                <div class="message_options">
+                  <div class="message_info">Info</div>
+                  <div class="message_delete">Delete</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="message_box" data-chat="1">
+            <div class="message white">
+              <p>I will catch you later</p>
+              <h6>05:15</h6><i class="fas fa-chevron-down"></i>
+              <div class="message_dropdown">
+                <div class="message_options">
+                  <a href="#" class="message_info">Info</a>
+                  <a href="#" class="message_delete">Delete</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="message green">
+              <p>Okay leave it and thanks for that...</p>
+              <h6>05:30</h6><i class="fas fa-chevron-down"></i>
+              <div class="message_dropdown">
+                <div class="message_options">
+                  <div class="message_info">Info</div>
+                  <div class="message_delete">Delete</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="message_box" data-chat="2">
+            <div class="message white">
+              <p>Hi dev. The DEMO you requested is scheduled today for 2PM.</p>
+              <h6>05:15</h6><i class="fas fa-chevron-down"></i>
+              <div class="message_dropdown">
+                <div class="message_options">
+                  <a href="#" class="message_info">Info</a>
+                  <a href="#" class="message_delete">Delete</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="message green">
+              <p>Okay leave it and thanks for that...</p>
+              <h6>05:30</h6><i class="fas fa-chevron-down"></i>
+              <div class="message_dropdown">
+                <div class="message_options">
+                  <div href="#" class="message_info">Info</div>
+                  <div class="message_delete">Delete</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="message_box" data-chat="3">
+            <div class="message white">
+              <p>Hi dev. The DEMO you requested is scheduled today for 2PM.</p>
+              <h6>05:15</h6><i class="fas fa-chevron-down"></i>
+              <div class="message_dropdown">
+                <div class="message_options">
+                  <a href="#" class="message_info">Info</a>
+                  <a href="#" class="message_delete">Delete</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="message green">
+              <p>No I dont want it</p>
+              <h6>05:30</h6><i class="fas fa-chevron-down"></i>
+              <div class="message_dropdown">
+                <div class="message_options">
+                  <div class="message_info">Info</div>
+                  <div class="message_delete">Delete</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="message_box" data-chat="4">
+            <div class="message white">
+              <p>Hi dev. The DEMO you requested is scheduled today for 2PM.</p>
+              <h6>05:15</h6><i class="fas fa-chevron-down"></i>
+              <div class="message_dropdown">
+                <div class="message_options">
+                  <a href="#" class="message_info">Info</a>
+                  <a href="#" class="message_delete">Delete</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="message green">
+              <p>Thanks for spending your valuable time.</p>
+              <h6>05:30</h6><i class="fas fa-chevron-down"></i>
+              <div class="message_dropdown">
+                <div class="message_options">
+                  <div class="message_info">Info</div>
+                  <div class="message_delete">Delete</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="message_box" data-chat="5">
+            <div class="message white">
+              <p>Hi dev. The DEMO you requested is scheduled today for 2PM.</p>
+              <h6>05:15</h6><i class="fas fa-chevron-down"></i>
+              <div class="message_dropdown">
+                <div class="message_options">
+                  <a href="#" class="message_info">Info</a>
+                  <a href="#" class="message_delete">Delete</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="message green">
+              <p>Thanks for spending your valuable time.</p>
+              <h6>05:30</h6><i class="fas fa-chevron-down"></i>
+              <div class="message_dropdown">
+                <div class="message_options">
+                  <div class="message_info">Info</div>
+                  <div class="message_delete">Delete</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="message_box" data-chat="6">
+            <div class="message white">
+              <p>2marks important question send pannu da please!</p>
+              <h6>05:15</h6><i class="fas fa-chevron-down"></i>
+              <div class="message_dropdown">
+                <div class="message_options">
+                  <a href="#" class="message_info">Info</a>
+                  <a href="#" class="message_delete">Delete</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="message green">
+              <p>parama full la padi da</p>
+              <h6>05:30</h6><i class="fas fa-chevron-down"></i>
+              <div class="message_dropdown">
+                <div class="message_options">
+                  <div class="message_info">Info</div>
+                  <div class="message_delete">Delete</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="message_box" data-chat="7">
+            <div class="message white">
+              <p>good night, next day meet pannalam</p>
+              <h6>05:15</h6><i class="fas fa-chevron-down"></i>
+              <div class="message_dropdown">
+                <div class="message_options">
+                  <a href="#" class="message_info">Info</a>
+                  <a href="#" class="message_delete">Delete</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="message green">
+              <p>Clash royal la Giants anupu da....</p>
+              <h6>05:30</h6><i class="fas fa-chevron-down"></i>
+              <div class="message_dropdown">
+                <div class="message_options">
+                  <div class="message_info">Info</div>
+                  <div class="message_delete">Delete</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <footer>
+            <div class="type_message">
+              <i class="fas fa-smile"></i>
+              <input class="type_here" type="text" placeholder="Type a message">
+              <i class="fas fa-paper-plane"></i>
+              <i class="fas fa-microphone"></i>
+            </div>
+          </footer>
+      </div>
+    </section>
+
+    <div class="template">
+        <div class="message green">
+          <p class="content">Something new</p>
+          <h6 class="message_time">5:55</h6><i class="fas fa-chevron-down"></i>
+          <div class="message_dropdown">
+            <div class="message_options">
+              <div class="message_info">Info</div>
+              <div class="message_delete">Delete</div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  
+    
+    <div class="switch" onclick="toggle()"></div>
+
+    
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
+
